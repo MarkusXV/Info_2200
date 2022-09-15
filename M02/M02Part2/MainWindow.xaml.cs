@@ -51,9 +51,32 @@ namespace M02Part2
             }
         }
 
+        /// <summary>
+        /// Button to show the Details window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnShowPhoneDetails_Click(object sender, RoutedEventArgs e)
         {
+            PhoneDetails pdw = new PhoneDetails();
 
+            if (CbPhones.SelectedIndex == -1) //Nothing Selected
+            {
+                MessageBox.Show("Please select a phone first");
+            }
+            else //A phone is selected
+            {
+                if (phoneDict.TryGetValue(CbPhones.SelectedItem.ToString(), out Phone selectedPhone))
+                {
+                    pdw.UpdateGUI(selectedPhone);
+
+                    pdw.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show($"Couldn't find {CbPhones.SelectedItem} in the database");
+                }
+            }
         }
     }
 }

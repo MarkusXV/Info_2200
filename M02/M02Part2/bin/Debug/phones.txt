@@ -1,0 +1,3 @@
+Apple,iPhone 14 Pro Max,6.8",1T,1599
+Samsung,Fold X,14.9",512kb,2500.01
+OnePlus 10,OnePlus 10,5.9",10T,599.09
