@@ -1,0 +1,24 @@
+﻿<Window x:Class="M02Part2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M02Part2"
+        mc:Ignorable="d"
+        Title="Peter's Favorite Phones" Height="250" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="CbPhones"
+                  Margin="30,20"
+                  FontSize="30"/>
+        <Button x:Name="BtnShowPhoneDetails"
+                Grid.Row="1"
+                Margin="30,20"
+                Content="Show Details"
+                FontFamily="30"
+                Click="BtnShowPhoneDetails_Click"/>
+    </Grid>
+</Window>

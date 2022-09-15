@@ -1,0 +1,106 @@
+﻿<Window x:Class="KeyPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyPad"
+        mc:Ignorable="d"
+        Title="Peter Key Pad" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="LblNumber"
+               Grid.Column="0"
+               Grid.Row="0"
+               Grid.ColumnSpan="3"
+               HorizontalAlignment="Right"
+               HorizontalContentAlignment="Right"
+               Content="Results"
+               FontSize="40"/>
+               
+        <Button x:Name="Btn1"
+                Grid.Column="0"
+                Grid.Row="1"
+                Content="1"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn2"
+                Grid.Column="1"
+                Grid.Row="1"
+                Content="2"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn3"
+                Grid.Column="2"
+                Grid.Row="1"
+                Content="3"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn4"
+                Grid.Column="0"
+                Grid.Row="2"
+                Content="4"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn5"
+                Grid.Column="1"
+                Grid.Row="2"
+                Content="5"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn6"
+                Grid.Column="2"
+                Grid.Row="2"
+                Content="6"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn7"
+                Grid.Column="0"
+                Grid.Row="3"
+                Content="7"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn8"
+                Grid.Column="1"
+                Grid.Row="3"
+                Content="8"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn9"
+                Grid.Column="2"
+                Grid.Row="3"
+                Content="9"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        <Button x:Name="Btn0"
+                Grid.Column="1"
+                Grid.Row="4"
+                Content="0"
+                FontSize="30"
+                Margin="5"
+                Click="Btn1_Click"/>
+        
+        
+
+    </Grid>
+</Window>
