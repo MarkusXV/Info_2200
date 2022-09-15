@@ -1,0 +1,8 @@
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\bin\Debug\StateCapitalApp.exe.config
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\bin\Debug\StateCapitalApp.exe
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\bin\Debug\StateCapitalApp.pdb
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\obj\Debug\StateCapitalApp.csproj.AssemblyReference.cache
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\obj\Debug\StateCapitalApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\obj\Debug\StateCapitalApp.csproj.CoreCompileInputs.cache
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\obj\Debug\StateCapitalApp.exe
+C:\Users\peter\source\repos\StateCapitalApp\StateCapitalApp\obj\Debug\StateCapitalApp.pdb

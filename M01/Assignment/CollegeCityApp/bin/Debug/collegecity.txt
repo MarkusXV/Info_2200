@@ -1,0 +1,13 @@
+Utah Valley University,Orem
+Brigham Young University,Provo
+The University of Utah,Salt Lake City
+Westminster College,Salt Lake City
+Utah State University,Logan
+Idaho State University,Pocatello
+Southern Utah University,Cedar City
+Utah Tech University,St. George
+University of Phoenix,Honolulu
+Northern Arizona University,Flagstaff
+University of Wyoming,Laramie
+Colorado State University,Fort Collins
+University of Colorado,Boulder

@@ -1,0 +1,8 @@
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\obj\Debug\CollegeCityApp.csproj.AssemblyReference.cache
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\obj\Debug\CollegeCityApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\obj\Debug\CollegeCityApp.csproj.CoreCompileInputs.cache
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\bin\Debug\CollegeCityApp.exe.config
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\bin\Debug\CollegeCityApp.exe
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\bin\Debug\CollegeCityApp.pdb
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\obj\Debug\CollegeCityApp.exe
+C:\Users\peter\source\repos\CollegeCityApp\CollegeCityApp\obj\Debug\CollegeCityApp.pdb

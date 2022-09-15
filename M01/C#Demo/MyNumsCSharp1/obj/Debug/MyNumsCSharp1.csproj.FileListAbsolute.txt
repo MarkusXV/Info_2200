@@ -1,0 +1,8 @@
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\bin\Debug\MyNumsCSharp1.exe.config
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\bin\Debug\MyNumsCSharp1.exe
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\bin\Debug\MyNumsCSharp1.pdb
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\obj\Debug\MyNumsCSharp1.csproj.AssemblyReference.cache
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\obj\Debug\MyNumsCSharp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\obj\Debug\MyNumsCSharp1.csproj.CoreCompileInputs.cache
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\obj\Debug\MyNumsCSharp1.exe
+C:\Users\peter\source\repos\MyNumsCSharp1\MyNumsCSharp1\obj\Debug\MyNumsCSharp1.pdb
