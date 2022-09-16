@@ -34,3 +34,21 @@ C:\Users\MarkusXV\source\repos\MarkusXV\2200Info_Projects_CSharp\M02\M02Part2\ob
 C:\Users\MarkusXV\source\repos\MarkusXV\2200Info_Projects_CSharp\M02\M02Part2\obj\Debug\M02Part2.csproj.CoreCompileInputs.cache
 C:\Users\MarkusXV\source\repos\MarkusXV\2200Info_Projects_CSharp\M02\M02Part2\obj\Debug\M02Part2.exe
 C:\Users\MarkusXV\source\repos\MarkusXV\2200Info_Projects_CSharp\M02\M02Part2\obj\Debug\M02Part2.pdb
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\bin\Debug\M02Part2.exe.config
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\bin\Debug\M02Part2.exe
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\bin\Debug\M02Part2.pdb
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.csproj.AssemblyReference.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.csproj.SuggestedBindingRedirects.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\MainWindow.g.cs
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\PhoneDetails.g.cs
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\App.g.cs
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2_MarkupCompile.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2_MarkupCompile.lref
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\MainWindow.baml
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\PhoneDetails.baml
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.g.resources
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.Properties.Resources.resources
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.csproj.GenerateResource.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.csproj.CoreCompileInputs.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.exe
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M02\M02Part2\obj\Debug\M02Part2.pdb
