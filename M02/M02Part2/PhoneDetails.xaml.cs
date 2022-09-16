@@ -19,17 +19,17 @@ namespace M02Part2
     /// </summary>
     public partial class PhoneDetails : Window
     {
-        public PhoneDetails()
+        public PhoneDetails() //Creates the GUI
         {
-            InitializeComponent();
+            InitializeComponent(); //Initializes the Components of the GUI so that we can show it in the MainWindow backend code
         }
 
-        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        private void BtnClose_Click(object sender, RoutedEventArgs e) //When the close button is clicked on the Phone Details window
         {
-            Close();
+            Close(); //Closes the window
         }
 
-        public void UpdateGUI(Phone selectedPhone)
+        public void UpdateGUI(Phone selectedPhone) //Updates the Window's phone details when they change the phone in the combo box
         {
             LblMake.Content = selectedPhone.Make;
             LblModel.Content = selectedPhone.Model;

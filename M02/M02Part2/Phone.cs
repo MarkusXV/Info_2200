@@ -14,7 +14,7 @@ namespace M02Part2
             Model = phone[1];
             Display = phone[2];
             Storage = phone[3];
-            Price = decimal.Parse(phone[4]);
+            Price = decimal.Parse(phone[4]); //Parses the phone[4] string from the array to a decimal to fit in the decimal Price variable
         }
 
         /// <summary>

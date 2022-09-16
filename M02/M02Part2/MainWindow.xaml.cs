@@ -74,7 +74,7 @@ namespace M02Part2
                 {
                     pdw.UpdateGUI(selectedPhone); //Updates the GUI with the selected phone details just gathered
 
-                    pdw.ShowDialog(); //Displays the window
+                    pdw.Show(); //Displays the window
                 }
                 else
                 {
