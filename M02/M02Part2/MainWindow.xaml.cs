@@ -23,58 +23,62 @@ namespace M02Part2
     {
         Dictionary<string, Phone> phoneDict = new Dictionary<string, Phone>();
 
+        /// <summary>
+        /// Initializes the GUI and calls the LoadPhones method
+        /// </summary>
         public MainWindow()
         {
-            InitializeComponent();
-            LoadPhones();
+            InitializeComponent(); //Create the GUI
+            LoadPhones(); //Calls the LoadPhones method
         }
 
+        /// <summary>
+        /// Takes the text file and puts it in the dictionary
+        /// </summary>
         private void LoadPhones()
         {
-            StreamReader inputfile;
-            try
+            StreamReader inputfile; //Calls the StreamReader Class from System.io so we can read the text
+            try //Tries to read the file and displays error message if it can't
             {
-                inputfile = File.OpenText("phones.txt");
+                inputfile = File.OpenText("phones.txt"); //Opens the text file phones and puts it into the StreamReader (inputfile) so we can read it
 
-                while (!inputfile.EndOfStream)
+                while (!inputfile.EndOfStream) //For every line of text until there's no text left
                 {
-                    string[] tempphone = inputfile.ReadLine().Split(',');
-                    phoneDict.Add(tempphone[1], new Phone(tempphone));
-                    CbPhones.Items.Add(tempphone[1]);
+                    string[] tempphone = inputfile.ReadLine().Split(','); //Reads each line of text and splits it by the comma. Then adds each seperated item into a tempphone array.
+                    phoneDict.Add(tempphone[1], new Phone(tempphone)); //Adds each item with the Model (tempphone[1]) as the key, and the array as the values (set to Make, Model, etc) to the dictionary
+                    CbPhones.Items.Add(tempphone[1]); //Adds the model to the combobox
 
                 }
-                inputfile.Close();
+                inputfile.Close(); //Closes the text file
             }
-            catch (Exception ex)
+            catch (Exception ex) //If it can't read the text
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message); //Displays the error message in a MessageBox
             }
         }
 
         /// <summary>
         /// Button to show the Details window
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BtnShowPhoneDetails_Click(object sender, RoutedEventArgs e)
+        private void BtnShowPhoneDetails_Click(object sender, RoutedEventArgs e) //When the Show details button is clicked
         {
-            PhoneDetails pdw = new PhoneDetails();
+            PhoneDetails pdw = new PhoneDetails(); //Puts the new PhoneDetails window into memory
 
-            if (CbPhones.SelectedIndex == -1) //Nothing Selected
+            if (CbPhones.SelectedIndex == -1) //No phone is Selected in combo box
             {
-                MessageBox.Show("Please select a phone first");
+                MessageBox.Show("Please select a phone first"); //Display error message
             }
-            else //A phone is selected
+            else //A phone is selected in combo box
             {
-                if (phoneDict.TryGetValue(CbPhones.SelectedItem.ToString(), out Phone selectedPhone))
+                if (phoneDict.TryGetValue(CbPhones.SelectedItem.ToString(), out Phone selectedPhone)) //Tries to get the value from the dictionary from the combo box entry and puts it into the selectedPhone array
                 {
-                    pdw.UpdateGUI(selectedPhone);
+                    pdw.UpdateGUI(selectedPhone); //Updates the GUI with the selected phone details just gathered
 
-                    pdw.ShowDialog();
+                    pdw.ShowDialog(); //Displays the window
                 }
                 else
                 {
-                    MessageBox.Show($"Couldn't find {CbPhones.SelectedItem} in the database");
+                    MessageBox.Show($"Couldn't find {CbPhones.SelectedItem} in the database"); //Displays an error if it couldn't find the selected phone in the dictionary (almost impossible)
                 }
             }
         }
