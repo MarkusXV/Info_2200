@@ -5,8 +5,128 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assignment2_Nutrition"
         mc:Ignorable="d"
-        Title="DetailWindow" Height="450" Width="800">
-    <Grid>
+        Title="Nutrition Details" Height="600"  Width="550">
+    <StackPanel>
+        <GroupBox Height="290"
+                  Margin="0,15,0,5"
+                  Header="Food">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" MinWidth="100" />
+                    <ColumnDefinition Width="150" MinWidth="100" />
+                    <ColumnDefinition Width="100" MinWidth="100" />
+                    <ColumnDefinition Width="150" MinWidth="100" />
+                </Grid.ColumnDefinitions>
+
+             <!--Column 0-->
+                <Label Content="Food"            Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Food Type"       Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Serving Size"    Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                                                
+                <Label Content="Weight"          Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="4" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Percent Water"    Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="5" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Calories"        Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="6" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Protein"         Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="7" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Carbohydrates"   Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="8" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Fiber"           Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="9" Grid.Column="0" HorizontalContentAlignment="Right"/>
+             <!--Column 1-->
+                <Label x:Name="LblFood"          Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="0" Grid.Column="1" />
+                <Label x:Name="LblFoodType"      Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="1" Grid.Column="1" />
+                <Label x:Name="LblServingSize"   Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="2" Grid.Column="1" />
+                        
+                <Label x:Name="LblWeight"        Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="4" Grid.Column="1" />
+                <Label x:Name="LblPercentWater"  Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="5" Grid.Column="1" />
+                <Label x:Name="LblCalories"      Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="6" Grid.Column="1" />
+                <Label x:Name="LblProtein"       Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="7" Grid.Column="1" />
+                <Label x:Name="LblCarbohydrate"  Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="8" Grid.Column="1" />
+                <Label x:Name="LblFiber"         Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="9" Grid.Column="1" />
+
+             <!--Column 2-->
+                <Label Content="Cholesterol"     Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="4" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Total Fat"       Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="5" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Saturated Fat"   Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="6" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Monosat Fat"     Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="7" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Polyunsat Fat"   Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="8" Grid.Column="2" HorizontalContentAlignment="Right"/>
+
+             <!--Column 3-->
+                <Label x:Name="LblCholesterol"   Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="4" Grid.Column="3" />
+                <Label x:Name="LblTotalFat"      Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="5" Grid.Column="3" />
+                <Label x:Name="LblSaturateFat"   Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="6" Grid.Column="3" />
+                <Label x:Name="LblMonosatFat"    Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="7" Grid.Column="3" />
+                <Label x:Name="LblPolyunsatFat"  Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="8" Grid.Column="3" />
+
+            </Grid>
+        </GroupBox>
         
-    </Grid>
+        <GroupBox Height="240"
+                  Margin="0,5,0,0"
+                  Header="Nutrition">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" MinWidth="100" />
+                    <ColumnDefinition Width="150" MinWidth="100" />
+                    <ColumnDefinition Width="100" MinWidth="100" />
+                    <ColumnDefinition Width="150" MinWidth="100" />
+                </Grid.ColumnDefinitions>
+
+             <!--Column 0-->
+                <Label Content="Calcium"       Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Iron"          Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Magnesium"     Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Sodium"        Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="3" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Phosphorous"   Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="4" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="CaP Ratio"     Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="5" Grid.Column="0" HorizontalContentAlignment="Right"/>
+                <Label Content="Potassium"     Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="6" Grid.Column="0" HorizontalContentAlignment="Right"/>
+             <!--Column 1-->
+                <Label x:Name="LblCalcium"     Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="0" Grid.Column="1" />
+                <Label x:Name="LblIron"        Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="1" Grid.Column="1" />
+                <Label x:Name="LblMagnesium"   Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="2" Grid.Column="1" />
+                <Label x:Name="LblSodium"      Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="3" Grid.Column="1" />
+                <Label x:Name="LblPhosphorous" Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="4" Grid.Column="1" />
+                <Label x:Name="LblCaP"         Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="5" Grid.Column="1" />
+                <Label x:Name="LblPotassium"   Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="6" Grid.Column="1" />
+             <!--Column 2-->
+                <Label Content="Zinc"          Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Niacin"        Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Thiamin"       Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Riboflavin"    Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Vitamin C"     Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="4" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="Vitamin B6"    Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="5" Grid.Column="2" HorizontalContentAlignment="Right"/>
+                <Label Content="VitaminA"      Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Height="28" Grid.Row="6" Grid.Column="2" HorizontalContentAlignment="Right"/>
+             <!--Column 3-->
+                <Label x:Name="LblZinc"        Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="0" Grid.Column="3" />
+                <Label x:Name="LblNiacin"      Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="1" Grid.Column="3" />
+                <Label x:Name="LblThiamin"     Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="2" Grid.Column="3" />
+                <Label x:Name="LblRiboflavin"  Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="3" Grid.Column="3" />
+                <Label x:Name="LblVitC"        Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="4" Grid.Column="3" />
+                <Label x:Name="LblVitB6"       Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="5" Grid.Column="3" />
+                <Label x:Name="LblVitA"        Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="28" Grid.Row="6" Grid.Column="3" />
+
+            </Grid>
+        </GroupBox>
+        
+    </StackPanel>
 </Window>
