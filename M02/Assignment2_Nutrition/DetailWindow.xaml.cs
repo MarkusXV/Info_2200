@@ -20,11 +20,18 @@ namespace Assignment2_Nutrition
     /// </summary>
     public partial class DetailWindow : Window
     {
+        /// <summary>
+        /// Creates the GUI
+        /// </summary>
         public DetailWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); //Initializes the Components of the GUI so that we can show it later
         }
 
+        /// <summary>
+        /// Updates the Detail Window's Label contect with the selected Food's details
+        /// </summary>
+        /// <param name="selectedFood"></param>
         public void UpdateGUI(Food selectedFood)
         {
             LblFood.Content =         selectedFood.Foodkey;

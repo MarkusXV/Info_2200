@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace Assignment2_Nutrition
 {
-    public class Food
+    /// <summary>
+    /// Creates the Food class where we create the array definitions of the Food Details
+    /// </summary>
+    public class Food 
     {
+        /// <summary>
+        /// Takes the list of the phone details from the text file and splits them into seperate details
+        /// </summary>
+        /// <param name="food"></param>
         public Food(string[] food)
         {
             Foodkey =       food[0];
             Calcium =       double.Parse(food[1]);
-            ServingSize =   food[2];
+            ServingSize =   food[2]; //The assignment says double, but there's text inside the txt file for the serving size so I changed it to a string
             Weight =        double.Parse(food[3]);
             PercentWater =  double.Parse(food[4]);
             Energy =        double.Parse(food[5]);
@@ -38,9 +45,14 @@ namespace Assignment2_Nutrition
             VitC =          double.Parse(food[25]);
             VitB6 =         double.Parse(food[26]);
             FoodType =      food[27];
+            
+            //28 different Food details are in the txt file and in the Dictionary Values for each Food
 
         }
 
+        /// <summary>
+        /// Lets us have different Food details for each food key we pass into the method and sets it to those same values
+        /// </summary>
         public string Foodkey       { get; set; }
         public double Calcium       { get; set; }
         public string ServingSize   { get; set; }
