@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assignment2_Nutrition"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Peter's Nutrition Tracker" Height="300" Width="490">
     <Grid>
-        
+        <GroupBox Height="150"
+                  Width="440">
+            <ComboBox x:Name="cbFoods"
+                      Height="30"
+                      Width="420"
+                      SelectionChanged="Foods_SelectionChanged"/>
+        </GroupBox>
     </Grid>
 </Window>
