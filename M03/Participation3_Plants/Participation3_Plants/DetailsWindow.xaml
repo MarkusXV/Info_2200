@@ -1,0 +1,39 @@
+﻿<Window x:Class="Participation3_Plants.DetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Participation3_Plants"
+        mc:Ignorable="d"
+        Title="DetailsWindow" Height="450" Width="800">
+  <Grid>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    
+      
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+
+    </Grid.RowDefinitions>
+    <!-- Column 1 -->
+    <Label x:Name="LblName" Grid.Row="0"  Content="Name: "        FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+    <Label x:Name="LblType" Grid.Row="1"  Content="Type: "        FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+    <Label x:Name="LblEnv"  Grid.Row="2"  Content="Environment: " FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+    <Button x:Name="BtnSniff" Content="Sniff" Grid.Row="3" Grid.ColumnSpan="2" Margin="50,15,50,15" FontSize="25" Click="BtnSniff_Click"/>
+    
+    <!-- Column 2 -->
+    <Label x:Name="LblNameResults" Grid.Row="0" Grid.Column="1" Content="Results..." FontSize="25" VerticalAlignment="Center"/>
+    <Label x:Name="LblTypeResults" Grid.Row="1" Grid.Column="1" Content="Results..." FontSize="25" VerticalAlignment="Center"/>
+    <Label x:Name="LblEnvResults"  Grid.Row="2" Grid.Column="1" Content="Results..." FontSize="25" VerticalAlignment="Center"/>
+
+
+
+  </Grid>
+</Window>

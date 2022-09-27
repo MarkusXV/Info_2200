@@ -60,7 +60,7 @@
                HorizontalAlignment="Center"
                VerticalAlignment="Top"
                Margin="10"
-               Source="/Images/rose.png"/>
+               Source="/Images/blank.jpg"/>
 
         <!--Column 1-->
         <TextBox x:Name="TxtBoxName"
@@ -90,7 +90,8 @@
 
             <ListBox x:Name="LstBoxPlant"
                      Margin="3"
-                     FontSize="25"/>
+                     FontSize="25"
+                     SelectionChanged="LstBoxPlant_SelectionChanged"/>
 
         </GroupBox>
 
@@ -109,7 +110,7 @@
                VerticalAlignment="Top"
                Margin="10"
                Grid.RowSpan="2"
-               Source="/Images/desert.png"/>
+               Source="/Images/blank.jpg"/>
 
 
 

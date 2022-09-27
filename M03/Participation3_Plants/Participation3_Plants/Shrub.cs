@@ -12,5 +12,10 @@ namespace Participation3_Plants
     {
 
     }
+
+    public override string Sniff()
+    {
+      return "I like the smell of shrubs.";
+    }
   }
 }

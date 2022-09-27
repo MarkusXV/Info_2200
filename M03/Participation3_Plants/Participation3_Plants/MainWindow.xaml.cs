@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Packaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,17 +66,14 @@ namespace Participation3_Plants
         {
           case "Flower":
             plant = new Flower(TxtBoxName.Text, cbEnvironment.SelectedItem.ToString(), cbType.SelectedItem.ToString());
-            allPlantsDict.Add(TxtBoxName.Text, plant);
             break;
           case "Tree":
             plant = new Tree(TxtBoxName.Text, cbEnvironment.SelectedItem.ToString(), cbType.SelectedItem.ToString());
-            allPlantsDict.Add(TxtBoxName.Text, plant);
             break;
           case "Shrub":
             plant = new Shrub(TxtBoxName.Text, cbEnvironment.SelectedItem.ToString(), cbType.SelectedItem.ToString());
-            allPlantsDict.Add(TxtBoxName.Text, plant);
             break;
-          
+
           default:
             MessageBox.Show("This is an error");
             break;
@@ -83,7 +81,12 @@ namespace Participation3_Plants
 
         if (plant != null)
         {
+          allPlantsDict.Add(plant.Name, plant);
           LstBoxPlant.Items.Add(plant.Name);
+
+          TxtBoxName.Text = "";
+          cbEnvironment.SelectedIndex = -1;
+          cbType.SelectedIndex = -1;
         }
 
       }
@@ -92,12 +95,100 @@ namespace Participation3_Plants
 
     private void BtnShowDetails_Click(object sender, RoutedEventArgs e)
     {
+      if (LstBoxPlant.SelectedIndex > -1)
+      {
+        if (allPlantsDict.TryGetValue(LstBoxPlant.SelectedItem.ToString(), out Plant slPlant))
+        {
+          DetailsWindow pdw = new DetailsWindow();
+          pdw.LblNameResults.Content = slPlant.Name;
+          pdw.LblTypeResults.Content = slPlant.Type;
+          pdw.LblEnvResults.Content = slPlant.Environment;
+          pdw.SelectedPlant = slPlant;
 
+          pdw.Show();
+        }
+        else
+        {
+          MessageBox.Show("Couldn't find that plant in the database.");
+        }
+      }
     }
 
     private void cbType_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-      switch (cbType.SelectedItem.ToString())
+      if (cbEnvironment.SelectedIndex > -1)
+      {
+        switch (cbType.SelectedItem.ToString())
+        {
+          case "Flower":
+            ImgType.Source = new BitmapImage(new Uri("/Images/rose.png", UriKind.Relative));
+            break;
+          case "Tree":
+            ImgType.Source = new BitmapImage(new Uri("/Images/tree.jpg", UriKind.Relative));
+            break;
+          case "Shrub":
+            ImgType.Source = new BitmapImage(new Uri("/Images/shrub.png", UriKind.Relative));
+            break;
+
+          default:
+            MessageBox.Show("An unexpected error has occurred");
+            break;
+        }
+      }
+      else
+      {
+        ImgType.Source = new BitmapImage(new Uri("/Images/blank.jpg", UriKind.Relative));
+      }
+    }
+
+    private void cbEnvironment_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+
+      if (cbEnvironment.SelectedIndex > -1)
+      {
+        switch (cbEnvironment.SelectedItem.ToString())
+        {
+          case "Forest":
+            ImgEnvironment.Source = new BitmapImage(new Uri("/Images/forest.png", UriKind.Relative));
+            break;
+          case "Tropical":
+            ImgEnvironment.Source = new BitmapImage(new Uri("/Images/tropical.jpg", UriKind.Relative));
+            break;
+          case "Desert":
+            ImgEnvironment.Source = new BitmapImage(new Uri("/Images/desert.png", UriKind.Relative));
+            break;
+
+          default:
+            MessageBox.Show("An unexpected error has occurred");
+            break;
+        }
+      }
+      else
+      {
+        ImgEnvironment.Source = new BitmapImage(new Uri("/Images/blank.jpg", UriKind.Relative));
+      }  
+    }
+
+    private void LstBoxPlant_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+      string slLst = LstBoxPlant.SelectedItem.ToString();
+      
+      allPlantsDict.TryGetValue(slLst, out Plant slPlant);
+
+      switch (slPlant.Environment)
+      {
+        case "Forest":
+          ImgEnvironment.Source = new BitmapImage(new Uri("/Images/forest.png", UriKind.Relative));
+          break;
+        case "Tropical":
+          ImgEnvironment.Source = new BitmapImage(new Uri("/Images/tropical.jpg", UriKind.Relative));
+          break;
+        case "Desert":
+          ImgEnvironment.Source = new BitmapImage(new Uri("/Images/desert.png", UriKind.Relative));
+          break;
+      }
+
+      switch (slPlant.Type)
       {
         case "Flower":
           ImgType.Source = new BitmapImage(new Uri("/Images/rose.png", UriKind.Relative));
@@ -110,31 +201,9 @@ namespace Participation3_Plants
           break;
 
         default:
-          MessageBox.Show("An unexpected error has occurred");
           break;
-
-      }
-    }
-
-    private void cbEnvironment_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-      switch (cbEnvironment.SelectedItem.ToString())
-      {
-        case "Forest":
-          ImgEnvironment.Source = new BitmapImage(new Uri("/Images/forest.png", UriKind.Relative));
-          break;
-        case "Tropical":
-          ImgEnvironment.Source = new BitmapImage(new Uri("/Images/tropical.jpg", UriKind.Relative));
-          break;
-        case "Desert":
-          ImgEnvironment.Source = new BitmapImage(new Uri("/Images/desert.png", UriKind.Relative));
-          break;
-
-        default:
-          MessageBox.Show("An unexpected error has occurred");
-          break;
-
       }
     }
   }
 }
+

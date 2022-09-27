@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Participation3_Plants
 {
-    public class Flower : Plant
+  public class Flower : Plant
+  {
+    public Flower(string nm, string env, string tp) : base(nm, env, tp)
     {
-        public Flower(string nm, string env, string tp) : base(nm, env, tp)
-        {
 
-        }
     }
+
+    public override string Sniff()
+    {
+      return "I like the smell of flowers.";
+    }
+  }
 }

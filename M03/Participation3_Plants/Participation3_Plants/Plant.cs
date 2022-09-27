@@ -6,37 +6,42 @@ using System.Threading.Tasks;
 
 namespace Participation3_Plants
 {
-    public class Plant
+  public class Plant
+  {
+    private string _name;
+    private string _type;
+    private string _environment;
+
+    public string Name
     {
-        private string _name;
-        private string _type;
-        private string _environment;
+      get { return _name; }
+      set { _name = value; }
+    }
 
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
+    public string Type
+    {
+      get { return _type; }
+      set { _type = value; }
+    }
 
-        public string Type
-        {
-            get { return _type; }
-            set { _type = value; }
-        }
+    public string Environment
+    {
+      get { return _environment; }
+      set { _environment = value; }
+    }
 
-        public string Environment
-        {
-            get { return _environment; }
-            set { _environment = value; }
-        }
-
-        public Plant(string nm, string env, string tp)
-        {
-            _name = nm;
-            _type = tp;
-            _environment = env;
-
-        }
+    public Plant(string nm, string env, string tp)
+    {
+      _name = nm;
+      _type = tp;
+      _environment = env;
 
     }
+
+
+    public virtual string Sniff()
+    {
+      return "Let's sniff plants";
+    }
+  }
 }
