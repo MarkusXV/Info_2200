@@ -30,3 +30,19 @@ C:\Users\peter\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\
 C:\Users\peter\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.csproj.CoreCompileInputs.cache
 C:\Users\peter\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.exe
 C:\Users\peter\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.pdb
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\bin\Debug\Assignment3_Animals.exe.config
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\bin\Debug\Assignment3_Animals.exe
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\bin\Debug\Assignment3_Animals.pdb
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.csproj.AssemblyReference.cache
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.csproj.SuggestedBindingRedirects.cache
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\MainWindow.g.cs
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\App.g.cs
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals_MarkupCompile.cache
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals_MarkupCompile.lref
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\MainWindow.baml
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.g.resources
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.Properties.Resources.resources
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.csproj.GenerateResource.cache
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.csproj.CoreCompileInputs.cache
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.exe
+D:\Github\Info_2200\M03\Assignment3_Animals\Assignment3_Animals\obj\Debug\Assignment3_Animals.pdb
