@@ -6,42 +6,44 @@ using System.Threading.Tasks;
 
 namespace Participation3_Plants
 {
-  public class Plant
+  public abstract class Plant //Creates the Abstract class for all the child plant classes
   {
-    private string _name;
-    private string _type;
-    private string _environment;
+    private string _name; //Backing field for the name
+    private string _type; //Backing field for the type
+    private string _environment; //Backing field for the environment
 
-    public string Name
+    public string Name //Name method that returns a string
     {
-      get { return _name; }
-      set { _name = value; }
+      get { return _name; } //returns the value if the method is retrieved
+      set { _name = value; } //Sets the backing field if the method is assigned (set)
     }
 
-    public string Type
+    public string Type //Name method that returns a string
     {
-      get { return _type; }
-      set { _type = value; }
+      get { return _type; } //returns the value if the method is retrieved
+      set { _type = value; } //Sets the backing field if the method is assigned (set)
     }
 
-    public string Environment
+    public string Environment //Name method that returns a string
     {
-      get { return _environment; }
-      set { _environment = value; }
+      get { return _environment; } //returns the value if the method is retrieved
+      set { _environment = value; } //Sets the backing field if the method is assigned (set)
     }
 
-    public Plant(string nm, string env, string tp)
+    public abstract decimal Price(); //Abstract method for the Price so that we can override it in the child classes
+
+    public Plant(string nm, string env, string tp) //Lets us create plants with the three parameters and put them in the backing field
     {
-      _name = nm;
-      _type = tp;
-      _environment = env;
+      _name = nm; //Puts nm that we pass in to the _name backing field
+      _type = tp; //Puts tp that we pass in to the _type backing field
+      _environment = env; //Puts env that we pass in to the _environment backing field
 
     }
 
 
-    public virtual string Sniff()
+    public virtual string Sniff() //Virtual method that we'll override in the child class
     {
-      return "Let's sniff plants";
+      return "Let's sniff plants"; //Will never run since it will be overriden
     }
   }
 }

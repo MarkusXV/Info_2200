@@ -1,0 +1,13 @@
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\bin\Debug\CharStatistics.mdf
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\bin\Debug\CharStatistics_log.ldf
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\bin\Debug\Discussion4_DB.exe.config
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\bin\Debug\Discussion4_DB.exe
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\bin\Debug\Discussion4_DB.pdb
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.csproj.AssemblyReference.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.csproj.SuggestedBindingRedirects.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.Properties.Resources.resources
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.csproj.GenerateResource.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.csproj.CoreCompileInputs.cache
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.exe
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.pdb
+C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M04\Discussion4_DB\Discussion4_DB\obj\Debug\Discussion4_DB.Form1.resources

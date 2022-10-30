@@ -32,3 +32,5 @@ C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projec
 C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Participation3_Plants\Participation3_Plants\obj\Debug\Participation3_Plants.pdb
 C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Participation3_Plants\Participation3_Plants\obj\Debug\DetailsWindow.g.cs
 C:\Users\MarkusXV\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Participation3_Plants\Participation3_Plants\obj\Debug\DetailsWindow.baml
+C:\Users\peter\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Participation3_Plants\Participation3_Plants\obj\Debug\DetailsWindow.g.cs
+C:\Users\peter\OneDrive - Utah Valley University\Fall 2022\C#\2200Info_Projects\M03\Participation3_Plants\Participation3_Plants\obj\Debug\DetailsWindow.baml

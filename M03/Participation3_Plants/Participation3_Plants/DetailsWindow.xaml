@@ -19,19 +19,22 @@
       <RowDefinition Height="*"/>
       <RowDefinition Height="*"/>
       <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
 
     </Grid.RowDefinitions>
     <!-- Column 1 -->
     <Label x:Name="LblName" Grid.Row="0"  Content="Name: "        FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
     <Label x:Name="LblType" Grid.Row="1"  Content="Type: "        FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
     <Label x:Name="LblEnv"  Grid.Row="2"  Content="Environment: " FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-
-    <Button x:Name="BtnSniff" Content="Sniff" Grid.Row="3" Grid.ColumnSpan="2" Margin="50,15,50,15" FontSize="25" Click="BtnSniff_Click"/>
+    <Label x:Name="LblPrice"  Grid.Row="3"  Content="Price: " FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+    
+    <Button x:Name="BtnSniff" Content="Sniff" Grid.Row="4" Grid.ColumnSpan="2" Margin="50,15,50,15" FontSize="25" Click="BtnSniff_Click"/>
     
     <!-- Column 2 -->
     <Label x:Name="LblNameResults" Grid.Row="0" Grid.Column="1" Content="Results..." FontSize="25" VerticalAlignment="Center"/>
     <Label x:Name="LblTypeResults" Grid.Row="1" Grid.Column="1" Content="Results..." FontSize="25" VerticalAlignment="Center"/>
     <Label x:Name="LblEnvResults"  Grid.Row="2" Grid.Column="1" Content="Results..." FontSize="25" VerticalAlignment="Center"/>
+    <Label x:Name="LblPriceResults"  Grid.Row="3" Grid.Column="1" Content="Results..." FontSize="25" VerticalAlignment="Center"/>
 
 
 

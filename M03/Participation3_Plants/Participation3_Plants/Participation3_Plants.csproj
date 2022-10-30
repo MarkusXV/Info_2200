@@ -55,14 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DetailsWindow.xaml.cs">
-      <DependentUpon>DetailsWindow.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="DetailsWindow.xaml.cs" />
     <Compile Include="Shrub.cs" />
     <Compile Include="Tree.cs" />
     <Page Include="DetailsWindow.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -112,9 +110,6 @@
     <Resource Include="Images\shrub.png" />
     <Resource Include="Images\tree.jpg" />
     <Resource Include="Images\tropical.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\blank.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
