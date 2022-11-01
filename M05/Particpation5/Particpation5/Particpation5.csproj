@@ -76,6 +76,7 @@
     <Compile Include="LandingForm.Designer.cs">
       <DependentUpon>LandingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductEntityDb.cs" />
     <Compile Include="ProductSearchForm.cs">

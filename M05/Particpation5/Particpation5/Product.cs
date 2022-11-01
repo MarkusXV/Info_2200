@@ -17,9 +17,13 @@ namespace Particpation5
     [StringLength(50)]
     public string Description { get; set; }
 
+    [Display(Name ="UoH")]
     public int Units_On_Hand { get; set; }
 
     [Column(TypeName = "money")]
     public decimal Price { get; set; }
+
+    [Required]
+    public string Category { get; set; }
   }
 }
