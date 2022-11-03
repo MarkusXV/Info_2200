@@ -21,7 +21,11 @@ namespace Particpation5
 
     private void BtnAddProduct_Click(object sender, EventArgs e)
     {
+      AddProductForm addProductForm = new AddProductForm();
+      addProductForm.ShowDialog();
 
+      db.SaveChanges();
+      UpdateTableData();
     }
 
     private void BtnDelete_Click(object sender, EventArgs e)
@@ -34,6 +38,7 @@ namespace Particpation5
           db.Products.Remove(foundProduct);
           db.SaveChanges();
           UpdateTableData();
+          MessageBox.Show($"{foundProduct.Product_Number} was deleted from the database.");
         }
         else
         {
@@ -64,9 +69,10 @@ namespace Particpation5
 
     private void UpdateTableData()
     {
-      //List<Product> allProducts = db.Products.ToList(); // Linq method
+      // List<Product> allProducts = db.Products.ToList(); // Linq method
       List<Product> products = (from prod in db.Products
                                 select prod).ToList();
+      // List<Product> LinqMethod = db.Products.ToList(); Same thing
 
       DgvProducts.DataSource = products;
 
