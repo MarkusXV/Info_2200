@@ -28,35 +28,36 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.listView1 = new System.Windows.Forms.ListView();
+      this.LstViewsCategories = new System.Windows.Forms.ListView();
       this.SuspendLayout();
       // 
-      // listView1
+      // LstViewsCategories
       // 
-      this.listView1.HideSelection = false;
-      this.listView1.Location = new System.Drawing.Point(12, 12);
-      this.listView1.Name = "listView1";
-      this.listView1.Size = new System.Drawing.Size(475, 432);
-      this.listView1.TabIndex = 0;
-      this.listView1.UseCompatibleStateImageBehavior = false;
-      this.listView1.View = System.Windows.Forms.View.Details;
+      this.LstViewsCategories.HideSelection = false;
+      this.LstViewsCategories.Location = new System.Drawing.Point(12, 12);
+      this.LstViewsCategories.Name = "LstViewsCategories";
+      this.LstViewsCategories.Size = new System.Drawing.Size(946, 737);
+      this.LstViewsCategories.TabIndex = 0;
+      this.LstViewsCategories.UseCompatibleStateImageBehavior = false;
+      this.LstViewsCategories.View = System.Windows.Forms.View.Details;
       // 
       // CategoryForm
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 44F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(499, 456);
-      this.Controls.Add(this.listView1);
+      this.ClientSize = new System.Drawing.Size(970, 761);
+      this.Controls.Add(this.LstViewsCategories);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+      this.Margin = new System.Windows.Forms.Padding(6);
       this.Name = "CategoryForm";
       this.Text = "CategoryForm";
+      this.Load += new System.EventHandler(this.CategoryForm_Load);
       this.ResumeLayout(false);
 
     }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView LstViewsCategories;
     }
 }

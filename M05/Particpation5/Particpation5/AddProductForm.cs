@@ -78,7 +78,7 @@ namespace Particpation5
                       where cat.Category != null
                       group cat.Category by cat.Category into c
                       select new { Category = c.Key });
-      //var catItems = db.Products.Where(cat => cat.Category != null).GroupBy(cat => cat.Category);
+      //var LinqMethod = db.Products.Where(cat => cat.Category != null).GroupBy(cat => cat.Category).Select(c => new { Category = c.Key }).ToArray();
       
 
       CbCategory.Items.AddRange(catItems.Select(cats => cats.Category).ToArray());
