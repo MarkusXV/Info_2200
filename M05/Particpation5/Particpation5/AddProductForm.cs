@@ -23,9 +23,9 @@ namespace Particpation5
     {
       if (TxtBoxProductNumber.Text != null &&
         TxtBoxDescription.Text != null &&
-        decimal.TryParse(TxtBoxPrice.Text, out decimal price) && 
-        int.TryParse(TxtBoxUoH.Text, out int uon) && 
-        (CbCategory.SelectedIndex > -1 || TxtBoxNewCategory.Text != null))
+        decimal.TryParse(TxtBoxPrice.Text, out decimal price) &&
+        int.TryParse(TxtBoxUoH.Text, out int uon) &&
+        CbCategory.SelectedIndex > -1)
       {
         Product newProduct = new Product
         {
@@ -37,7 +37,10 @@ namespace Particpation5
         };
         db.Products.Add(newProduct);
         db.SaveChanges();
+        MessageBox.Show($"{newProduct.Description} was just added to the database.");
+
         Close();
+        
       }
       else
       {
@@ -67,6 +70,10 @@ namespace Particpation5
 
     private void AddProductForm_Load(object sender, EventArgs e)
     {
+      LblNew.Hide();
+      TxtBoxNewCategory.Hide();
+
+      CbCategory.Items.Add("New Category");
       var catItems = (from cat in db.Products
                       where cat.Category != null
                       group cat.Category by cat.Category into c
@@ -74,7 +81,7 @@ namespace Particpation5
       //var catItems = db.Products.Where(cat => cat.Category != null).GroupBy(cat => cat.Category);
       
 
-      CbCategory.Items.AddRange(catItems.ToArray());
+      CbCategory.Items.AddRange(catItems.Select(cats => cats.Category).ToArray());
     }
 
   }
