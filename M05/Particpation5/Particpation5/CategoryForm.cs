@@ -34,7 +34,7 @@ namespace Particpation5
 
       foreach (CatTotalViewModel catTotal in catTotals)
       {
-        string[] listitems = { catTotal.CatCount.ToString() };
+        string[] listitems = { catTotal.ProdCategory, catTotal.CatCount.ToString() };
         ListViewItem listViewItem = new ListViewItem(listitems);
         LstViewsCategories.Items.Add(listViewItem);
       }
