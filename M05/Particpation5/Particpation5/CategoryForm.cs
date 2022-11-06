@@ -22,6 +22,7 @@ namespace Particpation5
     {
       LstViewsCategories.Columns.Add("Category");
       LstViewsCategories.Columns.Add("Count");
+      LstViewsCategories.Columns.Add("Mate");
 
       List<CatTotalViewModel> catTotals = (from cat in db.Products
                                           group cat.Category by cat.Category into cats
