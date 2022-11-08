@@ -8,16 +8,18 @@ using System.Threading.Tasks;
 
 namespace Assignment5_JellyBelly
 {
-  [Table("JellyBellyTable")]
+  [Table("JellyBellyTable")] 
+ 
+  ///Formats the table with columns using C# code that translates to SQL
   public class JellyBelly
   {
     [Key]
-    public int JellyBellyId { get; set; }
+    public int JellyBellyId { get; set; } //JellyBellyId is the first column and the key
 
     [StringLength(30)]
-    public string jellyBellyFlavor { get; set; }
+    public string jellyBellyFlavor { get; set; } //Jellybellyflavor is the flavor up to 30 char.
 
     [StringLength(30)]
-    public string category { get; set; }
+    public string category { get; set; } //Category is the category of flavor up to 30 char.
   }
 }
