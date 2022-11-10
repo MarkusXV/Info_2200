@@ -17,11 +17,15 @@ namespace ServerApp
       listener.StartListening(); //Calls the start listening method in the listener class
       
       Process process = new Process(); //Creates a new Process using System.Diagnostics
-      process.StartInfo.FileName = "Y:\\Documents\\GitHub\\Info_2200\\M06\\Participation6_ClientServer\\ClientApp\\bin\\Debug\\ClientApp.exe"; //Provides the .exe for the ClientApp GUI
+      
+      process.StartInfo.FileName = "D:\\Github\\Info_2200\\M06\\Participation6_ClientServer\\ClientApp\\bin\\Debug\\ClientApp.exe"; //Provides the .exe for the ClientApp GUI
       process.Start(); //Starts the GUI Process
 
       Console.WriteLine("The Server is running..."); //Prints that the server is running just to make sure
       Console.ReadLine(); //Waits for a request from the Client and makes sure that the console stays open
+
+      //Mac: Y:\\Documents\\GitHub\\Info_2200\\M06\\Participation6_ClientServer\\ClientApp\\bin\\Debug\\ClientApp.exe
+      //Windows: D:\\Github\\Info_2200\\M06\\Participation6_ClientServer\\ClientApp\\bin\\Debug\\ClientApp.exe
 
     }
   }

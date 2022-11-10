@@ -11,35 +11,40 @@ namespace ClientApp
 {
   public class SynchronousSocketClient
   {
-    const int SERVER_PORT = 11000;
-    const string IP_ADDRESS = "127.0.0.1";
+    const int SERVER_PORT = 11000; //Constant for the server port
+    const string IP_ADDRESS = "127.0.0.1"; //Constant for the client IP address
 
+    /// <summary>
+    /// Contacts the server by opening up the tcpClient and networkstream
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns></returns>
     public string ContactServer(string request)
     {
-      string responseString = "";
+      string responseString = ""; //Declares an empty response string
       try
       {
-        //Setting up the Connection with IP and Port
-        TcpClient tcpClient = new TcpClient();
-        tcpClient.Connect(IPAddress.Parse(IP_ADDRESS), SERVER_PORT);
-        NetworkStream networkStream = tcpClient.GetStream();
+        ///Setting up the Connection with IP and Port
+        TcpClient tcpClient = new TcpClient(); //Creates a new instance of the TcpClient class
+        tcpClient.Connect(IPAddress.Parse(IP_ADDRESS), SERVER_PORT); //Connects to the server using the IP address and the port
+        NetworkStream networkStream = tcpClient.GetStream(); //Creates a networkStream by calling the GetStream method
 
-        //Passing the request and response to and from Server
-        StreamWriter streamWriter = new StreamWriter(networkStream);
-        StreamReader streamReader = new StreamReader(networkStream);
+        ///Passing the request and response to and from Server
+        StreamWriter streamWriter = new StreamWriter(networkStream); //Sets up the streamwriter to be able to send to the server
+        StreamReader streamReader = new StreamReader(networkStream); //Sets up the streamreader to be able to read from the server's response
 
-        streamWriter.AutoFlush = true;
-        streamWriter.WriteLine(request);
-        responseString = streamReader.ReadLine();
+        streamWriter.AutoFlush = true; //Sets the streamwriter's autoflush to true
+        streamWriter.WriteLine(request); //Sends the user's request over to the server
+        responseString = streamReader.ReadLine(); //Gets the response from the server and puts it into the response string
 
-        networkStream.Close();
-        tcpClient.Close();
+        networkStream.Close(); //Closes the network stream
+        tcpClient.Close(); //Closes the tcpClient
       }
-      catch (Exception ex)
+      catch (Exception ex) //Any errors that occur
       {
-        responseString = ex.Message;
+        responseString = ex.Message; //Display the error in the response string so that the GUI response text box will see it
       }
-      return responseString;
+      return responseString; //Returns the response string
     }
   }
 }

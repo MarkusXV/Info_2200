@@ -34,55 +34,59 @@ namespace ServerApp
     /// </summary>
     public void StartListening()
     {
-      IPAddress iPAddress = IPAddress.Parse(IP_ADDRESS);
-      tcpListener = new TcpListener(iPAddress, PORT_NUMBER);
-      tcpListener.Start();
+      IPAddress iPAddress = IPAddress.Parse(IP_ADDRESS); //Sets the IP address using the IP_ADDRESS constant
+      tcpListener = new TcpListener(iPAddress, PORT_NUMBER); //Creates a new TcpListener using the IP address and the port
+      tcpListener.Start(); //Starts the listener
 
-      Thread thread = new Thread(new ThreadStart(ProcessSocket));
-      thread.Start();
+      Thread thread = new Thread(new ThreadStart(ProcessSocket)); //Creates a new thread using a new Threadstart which passes in the ProcessSocket method (doesn't need parenthesis for some reason)
+      thread.Start(); //Starts the thread
     }
 
+    /// <summary>
+    /// Tells the socket how to handle the connection and what to do with streamreaders and writers
+    /// </summary>
     public void ProcessSocket()
     {
-      Socket socket = null;
+      Socket socket = null; //Sets a new Socket to null
 
       while (true)
       {
         try
         {
-          socket = tcpListener.AcceptSocket();
-          NetworkStream ns = new NetworkStream(socket);
-          StreamReader streamReader = new StreamReader(ns);
-          StreamWriter streamWriter = new StreamWriter(ns);
+          socket = tcpListener.AcceptSocket(); //Tries to accept the socket
+          NetworkStream ns = new NetworkStream(socket); //Creates a network stream based on the socket just created
+          StreamReader streamReader = new StreamReader(ns); //Creates a new StreamReader based on the networkstream just created
+          StreamWriter streamWriter = new StreamWriter(ns); //Creates a new StreamWriter based on the networkstream just created
 
-          streamWriter.AutoFlush = true;
+          streamWriter.AutoFlush = true; //Sets the AutoFlush to true for the streamWriter
 
-          string userRequest = streamReader.ReadLine();
-          Console.WriteLine($"User Requested: {userRequest}");
+          string userRequest = streamReader.ReadLine(); //Reads a line from the streamreader once something comes in and calls it the userRequest
+          Console.WriteLine($"User Requested: {userRequest}"); //Outputs the user's request to see that the server got it on the console
 
-          if (userRequest.ToUpper() == JOKE_INPUT)
+          ///Checks to see what the user input was and what to output based on that
+          if (userRequest.ToUpper() == JOKE_INPUT) //If the user requests joke
           {
-            string randJoke = serverData.GetRandomJoke();
-            Console.WriteLine(randJoke);
-            streamWriter.WriteLine(randJoke);
+            string randJoke = serverData.GetRandomJoke(); //Calls the GetRandomJoke in serverData.cs and calls it randJoke
+            Console.WriteLine(randJoke); //Writes the randJoke to the console
+            streamWriter.WriteLine(randJoke); //Passes the randJoke to the client through streamwriter
 
 
           }
-          else if (userRequest.ToUpper() == CONSP_INPUT)
+          else if (userRequest.ToUpper() == CONSP_INPUT) //If the user requests conspiracy
           {
-            string randConsp = serverData.GetRandomConsp();
-            Console.WriteLine(randConsp);
-            streamWriter.WriteLine(randConsp);
+            string randConsp = serverData.GetRandomConsp(); //Calls the GetRandomConsp in serverData.cs and calls it randconsp
+            Console.WriteLine(randConsp); //Writes the randConsp to the console
+            streamWriter.WriteLine(randConsp); //Passes teh randconsp to the client through streamwriter
           }
-          else
+          else //If it isn't either joke or conspiracy (error)
           {
-            Console.WriteLine($"Unable to make process {userRequest} on the server");
-            streamWriter.WriteLine("Please type \"Joke\" or \"Conspiracy\"");
+            Console.WriteLine($"Unable to make process {userRequest} on the server"); //Writes the userRequest to the console so we can see what they requested
+            streamWriter.WriteLine("Please type \"Joke\" or \"Conspiracy\""); //Passes an error message to the client through streamwriter
           }
         }
-        catch (Exception ex)
+        catch (Exception ex) //Any errors or exceptions
         {
-          Console.WriteLine(ex.ToString());
+          Console.WriteLine(ex.ToString()); //Writes the error out to the server console
         }
       }
     }
