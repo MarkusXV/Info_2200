@@ -11,36 +11,18 @@ namespace ServerApp
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Welcome to the server app.");
+      Console.WriteLine("Welcome to the server app."); //Writes a welcome message to the console
+
+      SynchronousSocketListener listener = new SynchronousSocketListener(); //Creates a new instance of the SynchSockList class and calls it's constructor method
+      listener.StartListening(); //Calls the start listening method in the listener class
       
-      SynchronousSocketListener listener = new SynchronousSocketListener();
-      listener.StartListening();
-      Console.WriteLine("The Server is running...");
-      Console.ReadLine();
+      Process process = new Process(); //Creates a new Process using System.Diagnostics
+      process.StartInfo.FileName = "Y:\\Documents\\GitHub\\Info_2200\\M06\\Participation6_ClientServer\\ClientApp\\bin\\Debug\\ClientApp.exe"; //Provides the .exe for the ClientApp GUI
+      process.Start(); //Starts the GUI Process
 
+      Console.WriteLine("The Server is running..."); //Prints that the server is running just to make sure
+      Console.ReadLine(); //Waits for a request from the Client and makes sure that the console stays open
 
-
-      //ServerData serverData = new ServerData();
-      //serverData.LoadFiles();
-
-      //Console.WriteLine("Welcome to Peter's Joke/Conspiracy Server");
-      //Console.WriteLine("-----------------------------------------");
-
-      //while (true)
-      //{
-      //  Console.WriteLine("Type q to quit");
-      //  string userInput = Console.ReadLine();
-        
-      //  if (userInput == "q")
-      //  {
-      //    break;
-      //  }
-      //  else
-      //  {
-      //    Console.WriteLine($"Joke: {serverData.GetRandomJoke()}");
-      //    Console.WriteLine($"Conspiracy: {serverData.GetRandomConsp()}");
-        }
-      }
     }
   }
 }

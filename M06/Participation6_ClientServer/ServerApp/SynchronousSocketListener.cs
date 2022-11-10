@@ -12,20 +12,26 @@ namespace ServerApp
 {
   public class SynchronousSocketListener
   {
-    const int PORT_NUMBER = 11000;
-    const string IP_ADDRESS = "127.0.0.1";
-    const string JOKE_INPUT = "JOKE";
-    const string CONSP_INPUT = "CONSPIRACY";
+    const int PORT_NUMBER = 11000; //Creates a constant for the port number
+    const string IP_ADDRESS = "127.0.0.1"; //Creates a constant for the IP address
+    const string JOKE_INPUT = "JOKE"; //Creates a constant for the joke input that we'll use to compare to the request string
+    const string CONSP_INPUT = "CONSPIRACY"; //Creates a constant for the consp input that we'll use to compare to the request string
 
-    TcpListener tcpListener;
-    ServerData serverData;
+    TcpListener tcpListener; //imports the tcpListener class
+    ServerData serverData; //imports the serverData class
 
+    /// <summary>
+    /// Initiates the Socket Listener
+    /// </summary>
     public SynchronousSocketListener()
     {
-      serverData = new ServerData();
-      serverData.LoadFiles();
+      serverData = new ServerData(); //calls the ServerData constructor method
+      serverData.LoadFiles(); //calls the LoadFiles method (loads the arrays with the txt files)
     }
 
+    /// <summary>
+    /// Starts the Thread for the socket so that we can listen for requests on the IP address and port
+    /// </summary>
     public void StartListening()
     {
       IPAddress iPAddress = IPAddress.Parse(IP_ADDRESS);
@@ -33,6 +39,7 @@ namespace ServerApp
       tcpListener.Start();
 
       Thread thread = new Thread(new ThreadStart(ProcessSocket));
+      thread.Start();
     }
 
     public void ProcessSocket()
@@ -51,6 +58,27 @@ namespace ServerApp
           streamWriter.AutoFlush = true;
 
           string userRequest = streamReader.ReadLine();
+          Console.WriteLine($"User Requested: {userRequest}");
+
+          if (userRequest.ToUpper() == JOKE_INPUT)
+          {
+            string randJoke = serverData.GetRandomJoke();
+            Console.WriteLine(randJoke);
+            streamWriter.WriteLine(randJoke);
+
+
+          }
+          else if (userRequest.ToUpper() == CONSP_INPUT)
+          {
+            string randConsp = serverData.GetRandomConsp();
+            Console.WriteLine(randConsp);
+            streamWriter.WriteLine(randConsp);
+          }
+          else
+          {
+            Console.WriteLine($"Unable to make process {userRequest} on the server");
+            streamWriter.WriteLine("Please type \"Joke\" or \"Conspiracy\"");
+          }
         }
         catch (Exception ex)
         {
