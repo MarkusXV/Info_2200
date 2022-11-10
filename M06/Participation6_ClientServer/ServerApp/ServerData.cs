@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServerApp
 {
-  public class TempServer
+  public class ServerData
   {
     Random rand = new Random();
     string[] jokes;
@@ -15,7 +15,7 @@ namespace ServerApp
     const string JOKE_FILE = "jokes.txt";
     const string CONSP_FILE = "conspiracies.txt";
 
-    public TempServer()
+    public ServerData()
     {
 
     }

@@ -34,7 +34,7 @@
       this.BtnSubmit = new System.Windows.Forms.Button();
       this.TxtBoxRequest = new System.Windows.Forms.TextBox();
       this.GbResponse = new System.Windows.Forms.GroupBox();
-      this.TxtBoxResults = new System.Windows.Forms.TextBox();
+      this.TxtBoxResponse = new System.Windows.Forms.TextBox();
       this.GbRequest.SuspendLayout();
       this.GbResponse.SuspendLayout();
       this.SuspendLayout();
@@ -48,7 +48,7 @@
       this.GbRequest.Margin = new System.Windows.Forms.Padding(4);
       this.GbRequest.Name = "GbRequest";
       this.GbRequest.Padding = new System.Windows.Forms.Padding(4);
-      this.GbRequest.Size = new System.Drawing.Size(1030, 144);
+      this.GbRequest.Size = new System.Drawing.Size(1030, 173);
       this.GbRequest.TabIndex = 0;
       this.GbRequest.TabStop = false;
       this.GbRequest.Text = "Request";
@@ -56,7 +56,7 @@
       // LblMessage
       // 
       this.LblMessage.AutoSize = true;
-      this.LblMessage.Location = new System.Drawing.Point(23, 39);
+      this.LblMessage.Location = new System.Drawing.Point(23, 46);
       this.LblMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.LblMessage.Name = "LblMessage";
       this.LblMessage.Size = new System.Drawing.Size(720, 42);
@@ -65,7 +65,7 @@
       // 
       // BtnSubmit
       // 
-      this.BtnSubmit.Location = new System.Drawing.Point(788, 81);
+      this.BtnSubmit.Location = new System.Drawing.Point(788, 102);
       this.BtnSubmit.Margin = new System.Windows.Forms.Padding(4);
       this.BtnSubmit.Name = "BtnSubmit";
       this.BtnSubmit.Size = new System.Drawing.Size(211, 49);
@@ -76,7 +76,7 @@
       // 
       // TxtBoxRequest
       // 
-      this.TxtBoxRequest.Location = new System.Drawing.Point(27, 81);
+      this.TxtBoxRequest.Location = new System.Drawing.Point(27, 102);
       this.TxtBoxRequest.Margin = new System.Windows.Forms.Padding(4);
       this.TxtBoxRequest.Name = "TxtBoxRequest";
       this.TxtBoxRequest.Size = new System.Drawing.Size(716, 49);
@@ -84,26 +84,26 @@
       // 
       // GbResponse
       // 
-      this.GbResponse.Controls.Add(this.TxtBoxResults);
-      this.GbResponse.Location = new System.Drawing.Point(13, 167);
+      this.GbResponse.Controls.Add(this.TxtBoxResponse);
+      this.GbResponse.Location = new System.Drawing.Point(13, 193);
       this.GbResponse.Margin = new System.Windows.Forms.Padding(4);
       this.GbResponse.Name = "GbResponse";
       this.GbResponse.Padding = new System.Windows.Forms.Padding(4);
-      this.GbResponse.Size = new System.Drawing.Size(1030, 565);
+      this.GbResponse.Size = new System.Drawing.Size(1030, 539);
       this.GbResponse.TabIndex = 1;
       this.GbResponse.TabStop = false;
       this.GbResponse.Text = "Response";
       // 
       // TxtBoxResults
       // 
-      this.TxtBoxResults.Location = new System.Drawing.Point(27, 45);
-      this.TxtBoxResults.Margin = new System.Windows.Forms.Padding(4);
-      this.TxtBoxResults.Multiline = true;
-      this.TxtBoxResults.Name = "TxtBoxResults";
-      this.TxtBoxResults.ReadOnly = true;
-      this.TxtBoxResults.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-      this.TxtBoxResults.Size = new System.Drawing.Size(995, 512);
-      this.TxtBoxResults.TabIndex = 0;
+      this.TxtBoxResponse.Location = new System.Drawing.Point(27, 45);
+      this.TxtBoxResponse.Margin = new System.Windows.Forms.Padding(4);
+      this.TxtBoxResponse.Multiline = true;
+      this.TxtBoxResponse.Name = "TxtBoxResults";
+      this.TxtBoxResponse.ReadOnly = true;
+      this.TxtBoxResponse.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+      this.TxtBoxResponse.Size = new System.Drawing.Size(995, 512);
+      this.TxtBoxResponse.TabIndex = 0;
       // 
       // ClientForm
       // 
@@ -117,7 +117,6 @@
       this.Margin = new System.Windows.Forms.Padding(5);
       this.Name = "ClientForm";
       this.Text = "Ask the Server";
-      this.Load += new System.EventHandler(this.ClientForm_Load);
       this.GbRequest.ResumeLayout(false);
       this.GbRequest.PerformLayout();
       this.GbResponse.ResumeLayout(false);
@@ -133,7 +132,7 @@
         private System.Windows.Forms.Button BtnSubmit;
         private System.Windows.Forms.TextBox TxtBoxRequest;
         private System.Windows.Forms.GroupBox GbResponse;
-        private System.Windows.Forms.TextBox TxtBoxResults;
+        private System.Windows.Forms.TextBox TxtBoxResponse;
     }
 }
 

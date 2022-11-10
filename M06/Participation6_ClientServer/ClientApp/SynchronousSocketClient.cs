@@ -14,11 +14,6 @@ namespace ClientApp
     const int SERVER_PORT = 11000;
     const string IP_ADDRESS = "127.0.0.1";
 
-    public SynchronousSocketClient()
-    {
-
-    }
-
     public string ContactServer(string request)
     {
       string responseString = "";
@@ -36,6 +31,7 @@ namespace ClientApp
         streamWriter.AutoFlush = true;
         streamWriter.WriteLine(request);
         responseString = streamReader.ReadLine();
+
         networkStream.Close();
         tcpClient.Close();
       }
