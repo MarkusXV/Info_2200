@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace ClientApp
 {
+  
   public partial class ClientForm : Form
   {
+    SynchronousSocketClient client = new SynchronousSocketClient();
+
     public ClientForm()
     {
       InitializeComponent();
+    }
+
+    private void BtnSubmit_Click(object sender, EventArgs e)
+    {
+      TxtBoxResponse.Text = client.ContactServer(TxtBoxRequest.Text);
     }
   }
 }
