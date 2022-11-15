@@ -18,7 +18,7 @@ namespace ServerApp
 
       Process process = new Process(); //Creates a new Process using System.Diagnostics
 
-      process.StartInfo.FileName = "D:\\Github\\Info_2200\\M06\\Assignment6_UVU_Server\\ClientApp\\bin\\Debug\\ClientApp.exe"; //Provides the .exe for the ClientApp GUI
+      process.StartInfo.FileName = "Y:\\Documents\\GitHub\\Info_2200\\M06\\Assignment6_UVU_Server\\ClientApp\\bin\\Debug\\ClientApp.exe"; //Provides the .exe for the ClientApp GUI
       process.Start(); //Starts the GUI Process
 
       Console.WriteLine("The Server is running..."); //Prints that the server is running just to make sure

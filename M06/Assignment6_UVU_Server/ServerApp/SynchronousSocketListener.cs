@@ -81,7 +81,7 @@ namespace ServerApp
           else //If it isn't either fact or major (error)
           {
             Console.WriteLine($"Unable to make process {userRequest} on the server"); //Writes the userRequest to the console so we can see what they requested
-            streamWriter.WriteLine("Please type \"Joke\" or \"Conspiracy\""); //Passes an error message to the client through streamwriter
+            streamWriter.WriteLine("Please type \"UVUFact\" or \"UVUMajor\""); //Passes an error message to the client through streamwriter
           }
         }
         catch (Exception ex) //Any errors or exceptions
