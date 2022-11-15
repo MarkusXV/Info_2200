@@ -14,8 +14,8 @@ namespace ServerApp
   {
     const int PORT_NUMBER = 11000; //Creates a constant for the port number
     const string IP_ADDRESS = "127.0.0.1"; //Creates a constant for the IP address
-    const string FACT_INPUT = "UVUFACT"; //Creates a constant for the joke input that we'll use to compare to the request string
-    const string MAJOR_INPUT = "UVUMAJOR"; //Creates a constant for the consp input that we'll use to compare to the request string
+    const string FACT_INPUT = "UVUFACT"; //Creates a constant for the Fact input that we'll use to compare to the request string
+    const string MAJOR_INPUT = "UVUMAJOR"; //Creates a constant for the Major input that we'll use to compare to the request string
 
     TcpListener tcpListener; //imports the tcpListener class
     ServerData serverData; //imports the serverData class
@@ -64,21 +64,21 @@ namespace ServerApp
           Console.WriteLine($"User Requested: {userRequest}"); //Outputs the user's request to see that the server got it on the console
 
           ///Checks to see what the user input was and what to output based on that
-          if (userRequest.ToUpper() == FACT_INPUT) //If the user requests joke
+          if (userRequest.ToUpper() == FACT_INPUT) //If the user requests fact
           {
-            string randFact = serverData.GetRandomFact(); //Calls the GetRandomJoke in serverData.cs and calls it randJoke
-            Console.WriteLine(randFact); //Writes the randJoke to the console
-            streamWriter.WriteLine(randFact); //Passes the randJoke to the client through streamwriter
+            string randFact = serverData.GetRandomFact(); //Calls the GetRandomFact in serverData.cs and calls it randFact
+            Console.WriteLine(randFact); //Writes the randFact to the console
+            streamWriter.WriteLine(randFact); //Passes the randFact to the client through streamwriter
 
 
           }
-          else if (userRequest.ToUpper() == MAJOR_INPUT) //If the user requests conspiracy
+          else if (userRequest.ToUpper() == MAJOR_INPUT) //If the user requests major
           {
-            string randMajor = serverData.GetRandomMajor(); //Calls the GetRandomConsp in serverData.cs and calls it randconsp
-            Console.WriteLine(randMajor); //Writes the randConsp to the console
-            streamWriter.WriteLine(randMajor); //Passes teh randconsp to the client through streamwriter
+            string randMajor = serverData.GetRandomMajor(); //Calls the GetRandomMajor in serverData.cs and calls it randMajor
+            Console.WriteLine(randMajor); //Writes the randMajor to the console
+            streamWriter.WriteLine(randMajor); //Passes teh randMajor to the client through streamwriter
           }
-          else //If it isn't either joke or conspiracy (error)
+          else //If it isn't either fact or major (error)
           {
             Console.WriteLine($"Unable to make process {userRequest} on the server"); //Writes the userRequest to the console so we can see what they requested
             streamWriter.WriteLine("Please type \"Joke\" or \"Conspiracy\""); //Passes an error message to the client through streamwriter
