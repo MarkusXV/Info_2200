@@ -1,24 +1,36 @@
-﻿namespace Participation7_WeatherAPI;
+﻿using Newtonsoft.Json.Linq;
+using System.Net;
+
+namespace Participation7_WeatherAPI;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
-	public MainPage()
+	const string WEATHERAPI = "4d86c9d83a242bd26bfe383353e67235";
+  public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+
+	private void BtnShowTemp_Clicked(object sender, EventArgs e)
 	{
-		count++;
+		if (EntryZipCode.Text != "")
+		{
+      using (WebClient wc = new WebClient())
+      {
+				try
+				{
+          wc.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
+          string jsontext = wc.DownloadString($"http://api.openweathermap.org/data/2.5/weather?zip={EntryZipCode.Text}&appid={WEATHERAPI}&units=imperial");
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+					JObject jo = JObject.Parse(jsontext);
+        }
+				catch (Exception ex)
+				{
+					DisplayAlert("Error", ex.Message, "Close");
+				}
+      }
+    }
 	}
 }
 
