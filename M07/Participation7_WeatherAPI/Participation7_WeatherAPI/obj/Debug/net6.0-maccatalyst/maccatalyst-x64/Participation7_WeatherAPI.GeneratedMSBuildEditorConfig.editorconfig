@@ -38,3 +38,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Participation7_WeatherAPI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Github/Info_2200/M07/Participation7_WeatherAPI/Participation7_WeatherAPI/WeatherPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Participation7_WeatherAPI.WeatherPage.xaml
+build_metadata.AdditionalFiles.TargetPath = WeatherPage.xaml
+build_metadata.AdditionalFiles.RelativePath = WeatherPage.xaml

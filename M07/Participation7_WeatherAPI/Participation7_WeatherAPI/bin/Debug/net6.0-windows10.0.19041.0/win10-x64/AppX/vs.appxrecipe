@@ -30,25 +30,25 @@
     <AppXManifest Include="D:\Github\Info_2200\M07\Participation7_WeatherAPI\Participation7_WeatherAPI\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-13T19:03:55.786</Modified>
+      <Modified>2022-12-15T02:30:20.904</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Github\Info_2200\M07\Participation7_WeatherAPI\Participation7_WeatherAPI\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-13T19:03:55.516</Modified>
+      <Modified>2022-12-15T02:30:20.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Info_2200\M07\Participation7_WeatherAPI\Participation7_WeatherAPI\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Participation7_WeatherAPI.runtimeconfig.json">
       <PackagePath>Participation7_WeatherAPI.runtimeconfig.json</PackagePath>
-      <Modified>2022-12-13T18:47:59.774</Modified>
+      <Modified>2022-12-15T00:18:33.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Info_2200\M07\Participation7_WeatherAPI\Participation7_WeatherAPI\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Participation7_WeatherAPI.dll">
       <PackagePath>Participation7_WeatherAPI.dll</PackagePath>
-      <Modified>2022-12-13T19:03:54.941</Modified>
+      <Modified>2022-12-15T02:30:20.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Info_2200\M07\Participation7_WeatherAPI\Participation7_WeatherAPI\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Participation7_WeatherAPI.exe</PackagePath>
-      <Modified>2022-12-13T19:03:54.948</Modified>
+      <Modified>2022-12-15T02:30:20.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\MarkusXV\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.9\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1054,6 +1054,10 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-07-19T16:53:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MarkusXV\.nuget\packages\newtonsoft.json\13.0.2\lib\net6.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2022-11-24T02:10:26.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\MarkusXV\.nuget\packages\microsoft.graphics.win2d\1.0.3.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2022-04-28T15:57:10.000</Modified>
@@ -1064,7 +1068,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Info_2200\M07\Participation7_WeatherAPI\Participation7_WeatherAPI\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Participation7_WeatherAPI.deps.json">
       <PackagePath>Participation7_WeatherAPI.deps.json</PackagePath>
-      <Modified>2022-12-13T19:03:55.681</Modified>
+      <Modified>2022-12-15T02:30:20.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.486\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
